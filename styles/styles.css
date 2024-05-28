@@ -142,7 +142,7 @@ main #request_counseling .request_g dl dt span {}
 main #request_counseling .request_g dl dd {}
 main #request_counseling .request_g dl dd input[name^=user] {
     width:398px;margin: 8px 0 22px;
-    border-radius:18px; font-size:0.875rem; color: #636363;
+    border-radius:18px; font-size:0.625rem; color: #636363;
     border:1px solid #636363; outline:none;
     padding: 0 16px; height: 36px;
 }
@@ -155,8 +155,7 @@ main #request_counseling .request_g dl dd #user_email_select {
 }
 main #request_counseling .request_g dl dd #user_email_select option {}
 main #request_counseling .request_g dl dd input[name^=route] {margin-bottom: 16px;}
-main #request_counseling .request_g dl dd label {}
-main #request_counseling .request_g dl dd label {}
+main #request_counseling .request_g dl dd label {padding-right: 26px;}
 main #request_counseling .request_g dl dd #request_contents {
     border-radius:18px; font-size:0.875rem; color: #636363;
     border:1px solid #636363; outline:none;
