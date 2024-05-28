@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="빵, 창업, 파리바게트, 프랜차이즈, 제빵, 베이커리, 가맹점, 상담신청">
+        <meta name="description" content="온 가족이 사랑하는 대한민국 베이커리 브랜드 1위, 파리바게트. 누구나 파리바게트를 창업할 수 있도록 신청을 할 수 있는 사이트입니다.">
+        <title>가맹점 상담신청 | 파리바게트</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./styles/reset.css">
+        <link rel="stylesheet" href="./styles/styles.css">
+    </head>
+<body>
+    <header id="request_header">
+        <h2>
+            가맹점 상담신청
+        </h2>
+        <a href="./index.html"><img src="./images/cancle.svg" alt="뒤로가기"></a>
+    </header>
+    <main>
+        <form action="#" method="post" id="request_counseling">
+            <fieldset class="request_g">
+                <legend class="skip">상담신청서</legend>
+                <dl>
+                    <dt><span>*</span>이름</dt>
+                    <dd>
+                        <input type="text" name="user_name" placeholder="이름을 입력하세요" required>
+                    </dd>
+                    <dt><span>*</span>휴대폰번호</dt>
+                    <dd><input type="text" name="user_phone" placeholder="번호를 입력하세요 예) 01012345678" required></dd>
+                    <dt><span>*</span>이메일</dt>
+                    <dd>
+                        <input type="text" name="user_email" placeholder="예) abc1234" required>
+                        <span>@</span>
+                        <select name="user_email_select" id="user_email_select">
+                            <option selected disabled>주소를 선택해주세요</option>
+                            <option value="google">google.com</option>
+                            <option value="naver">naver.com</option>
+                            <option value="kakako">kakako.com</option>
+                            <option value="hanmail">hanmail.net</option>
+                            <option value="direct_input">직접 입력</option>
+                        </select>
+                    </dd>
+                    <dt><span>*</span>창업희망지역</dt>
+                    <dd><input type="text" name="user_desire_area" placeholder="지역을 작성하세요 예)서울시 송파구 가나다동" required></dd>
+                    <dt>신청계기</dt>
+                    <dd>
+                        <input type="radio" name="request_route" value="internet_search" id="internet_search">
+                        <label for="internet_search">인터넷 검색</label>
+                        <input type="radio" name="request_route" value="visit_store" id="visit_store">
+                        <label for="visit_store">매장방문</label>
+                        <input type="radio" name="request_route" value="introduction" id="introduction">
+                        <label for="introduction">지인 소개</label>
+                        <input type="radio" name="request_route" value="consulting_real_estate" id="consulting_real_estate">
+                        <label for="consulting_real_estate">컨설팅/부동산</label>
+                        <input type="radio" name="request_route" value="other" id="other">
+                        <label for="other">기타</label>
+                    </dd>
+                    <dt><span>*</span>제목</dt>
+                    <dd><input type="text" name="user_request_title" placeholder="상담 신청의 제목을 작성해 주세요" required></dd>
+                    <dt><span>*</span>내용</dt>
+                    <dd>
+                        <textarea name="request_contents" id="request_contents" cols="30" rows="5"></textarea>
+                    </dd>
+                </dl>
+            </fieldset>
+        </form>
+        <p>가맹점 관련하여 궁금한 점은 언제든 문의주시기 바랍니다.</p>
+    </main>
+    <nav class="tab_bar">
+        <a href="./index.html">
+            <p><img src="./images/intro_off_icon.svg" alt=""></p>
+            <p>매장소개</p>
+        </a>
+        <a href="./request.html">
+            <p><img src="./images/appli_on_icon.svg" alt=""></p>
+            <p>상담신청</p>
+        </a>
+        <a href="#">
+            <p><img src="./images/deliv_icon.svg" alt=""></p>
+            <p>배송서비스</p>
+        </a>
+        <a href="#">
+            <p><img src="./images/promo_icon.svg" alt=""></p>
+            <p>프로모션</p>
+        </a>
+    </nav>
+</body>
+</html>

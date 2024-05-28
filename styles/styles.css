@@ -1,0 +1,166 @@
+/* 공통 영역 */
+body {padding-top: 20px;
+    background-color:#F8F8F8;}
+body > * {
+    width:430px;
+    margin:0 auto;
+    background-color:#F8F8F8;
+}
+/* 탭바 적용 */
+.tab_bar {
+    margin-top: 12px;
+    border-top: 1px solid #636363;
+    padding: 5px 16px;
+    display:flex;
+    justify-content: space-around;
+}
+.tab_bar a {
+    display:flex; flex-flow: column nowrap;
+    align-items: center;
+}
+.tab_bar a p {}
+.tab_bar a p img {}
+/* 개별 적용 */
+header {background-color:rgb(2, 53, 134);}
+header h1 {text-align: center; line-height:48px;}
+header h1 a {}
+header h1 a img {}
+header #gnb {
+    background-color:#E6D9B7; height:40px;
+    text-align:center; padding:0 16px;
+    display:flex; flex-flow:row nowrap;
+    justify-content:space-around; align-items: center;
+}
+header #gnb a {font-size:0.875rem; letter-spacing:-0.2px; color:#222222;}
+main {padding: 0 16px;}
+main #search_frm {}
+main #search_frm .search_g {
+    display:flex; flex-flow:row nowrap;
+    justify-content:center; align-items:center;
+    background-color:#F8F8F8;
+    border: 1px solid #023586;
+    height:48px; border-radius:50px; margin: 12px 0;
+}
+main #search_frm .search_g .img {}
+main #search_frm .search_g input[name^=search] {
+    width:298px; border:none; outline:0;
+    background-color:#F8F8F8;
+}
+main #search_frm .search_g #search_btn {border:none; outline: none; background-color:#F8F8F8;}
+main .banner_area {}
+main .banner_area img {border-radius:12px; margin-bottom: 12px;}
+main .intro_g1 {
+    margin: 12px 0;
+    display:flex; flex-flow: row nowrap;
+    padding: 12px 16px;
+    border: 1px solid rgba(99, 99, 99, .3);
+    border-radius:12px;
+}
+main .intro_g1 .img_area {} 
+main .intro_g1 .img_area img {border-radius: 12px;}
+main .intro_g1 div {margin-left:12px;}
+main .intro_g1 div h2 {
+    font-size:0.875rem; letter-spacing:-0.2px; color:#222;
+    margin-bottom: 12px;
+}
+main .intro_g1 div h2 span {font-weight: 600; color: #023586;}
+main .intro_g1 div p {
+    font-size:0.625rem; letter-spacing:-0.2px; color:#636363;
+    line-height: 1.5;
+}
+main .intro_g2 {
+    margin: 12px 0;
+    display:flex; flex-flow: column nowrap;
+    padding: 12px 16px;
+    border: 1px solid rgba(99, 99, 99, .3);
+    border-radius:12px;
+}
+main .intro_g2 .img_area2 {
+    display:flex; flex-flow: row nowrap;
+    justify-content: space-between;
+}
+main .intro_g2 .img_area2 li {}
+main .intro_g2 .img_area2 li img {border-radius:12px;}
+main .intro_g2 div {margin-top: 12px;}
+main .intro_g2 div h2 {
+    font-size:0.875rem; letter-spacing:-0.2px; color:#222;
+    margin-bottom: 12px;
+}
+main .intro_g2 div h2 span {font-weight: 600; color: #023586;}
+main .intro_g2 div p {
+    font-size:0.625rem; letter-spacing:-0.2px; color:#636363;
+    line-height: 1.5;
+}
+main .process {
+    padding: 12px 16px;
+    border: 1px solid rgba(99, 99, 99, .3);
+    border-radius:12px;
+}
+main .process h2 {color: #222; letter-spacing:-0.2px;}
+main .process h2 span {color: #023586; font-weight:600;}
+main .process ol {
+    display: flex; flex-flow:row nowrap;
+    width:100%; justify-content:space-between;
+}
+main .process ol li {
+    display:flex; align-items: center;
+    height:121px;
+}
+main .process ol li .process_num {
+    height: 16px; width: 16px;
+    border: 1px solid #000; border-radius: 8px;
+    text-align: center;
+}
+main .process ol li p {
+    font-size:0.625rem;display:flex; flex-flow: column nowrap;
+}
+main .process ol li::after{
+    content:'';
+    background-image:url(../images/next_arrow.svg);
+    width:24px; height: 24px;
+    display: block;
+}
+main .process ol li:last-of-type:after{background-image: none;}
+main .process ol li p img {width: 60px;}
+main .process ol li p span {width:80px;}
+/* ============= 가맹점 상담신청 */
+#request_header {
+    margin-bottom: 20px; display:flex;
+    height: 37px; padding: 0 16px;
+    justify-content: space-between;
+    align-items:center;
+}
+#request_header h2 {color: #F8F8F8;}
+#request_header a {}
+#request_header a img {}
+main {}
+main #request_counseling {background-color:#F8F8F8;}
+main #request_counseling .request_g {}
+main #request_counseling .request_g dl {}
+main #request_counseling .request_g dl dt {font-size:0.875rem;}
+main #request_counseling .request_g dl dt span {}
+main #request_counseling .request_g dl dd {}
+main #request_counseling .request_g dl dd input[name^=user] {
+    width:398px;margin: 8px 0 22px;
+    border-radius:18px; font-size:0.875rem; color: #636363;
+    border:1px solid #636363; outline:none;
+    padding: 0 16px; height: 36px;
+}
+main #request_counseling .request_g dl dd span {}
+main #request_counseling .request_g dl dd input[name=user_email] {width:176px;}
+main #request_counseling .request_g dl dd #user_email_select {
+    border-radius:18px; font-size:0.875rem; color: #636363;
+    border:1px solid #636363; outline:none;
+    padding: 0 16px; height: 36px;
+}
+main #request_counseling .request_g dl dd #user_email_select option {}
+main #request_counseling .request_g dl dd input[name^=route] {margin-bottom: 16px;}
+main #request_counseling .request_g dl dd label {}
+main #request_counseling .request_g dl dd label {}
+main #request_counseling .request_g dl dd #request_contents {
+    border-radius:18px; font-size:0.875rem; color: #636363;
+    border:1px solid #636363; outline:none;
+    width:398px;
+    padding: 0 16px;
+}
+main p:last-of-type {margin: 12px 0; font-weight: 0.625rem; color: #636363;}
